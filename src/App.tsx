@@ -1,6 +1,5 @@
-import { Canvas } from "@react-three/fiber";
-import UserInterface from "./UserInterface/index";
-import React from "react";
+import { Canvas } from '@react-three/fiber';
+import UserInterface from './UserInterface/index';
 
 function App() {
   return (

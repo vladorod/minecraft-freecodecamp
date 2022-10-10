@@ -1,2 +1,3 @@
-import MainPl from "./MainPl";
+import MainPl from './MainPl';
+
 export default MainPl;
