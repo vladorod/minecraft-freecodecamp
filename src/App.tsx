@@ -1,11 +1,11 @@
 import { Canvas } from '@react-three/fiber';
+import {FC , ReactElement} from 'react'
 
-function App() {
+const App: FC = () : ReactElement => {
   return (
     <>
       <Canvas>
       </Canvas>
-      <dir>Outside Canvas</dir>
     </>
   );
 }
