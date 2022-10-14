@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31d07ed9-cdab-4173-8fba-74d44543f2df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Ground/Ground.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/textures.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/images.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Player/Player.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TUTORIAL.md" beforeDir="false" afterPath="$PROJECT_DIR$/TUTORIAL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterface/MainPl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/MainPl.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/images.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ground/Ground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ground/Ground.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665395747905</updated>
       <workItem from="1665395751228" duration="7502000" />
-      <workItem from="1665780173805" duration="3350000" />
+      <workItem from="1665780173805" duration="5134000" />
     </task>
     <servers />
   </component>

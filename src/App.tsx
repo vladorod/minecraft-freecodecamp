@@ -3,6 +3,7 @@ import UserInterface from './UserInterface/index';
 import { Sky } from '@react-three/drei';
 import { Physics } from '@react-three/cannon';
 import { Ground } from './components/Ground/Ground';
+import Player from './components/Player/Player';
 
 function App() {
   return (
@@ -10,10 +11,10 @@ function App() {
       <UserInterface />
       <Canvas>
         <Sky sunPosition={[100, 100, 20]} />
-        {/* eslint-disable-next-line react/no-unknown-property */}
         <ambientLight intensity={0.5} />
         <Physics>
           <Ground />
+          <Player />
         </Physics>
       </Canvas>
     </>
