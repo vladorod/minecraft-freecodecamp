@@ -1,5 +1,5 @@
 import { FC, ReactElement } from 'react';
 
-const MainPl: FC = (): ReactElement => <div>123</div>;
+const MainPl: FC = (): ReactElement => <div></div>;
 
 export default MainPl;

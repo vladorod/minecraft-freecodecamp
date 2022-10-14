@@ -2,6 +2,10 @@
   "name": "minecraft-react",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
@@ -161,5 +165,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
   }
 }
