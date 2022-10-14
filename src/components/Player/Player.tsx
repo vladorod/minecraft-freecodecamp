@@ -1,9 +1,10 @@
 import { Triplet, useSphere } from '@react-three/cannon';
-import { useFrame, useThree } from '@react-three/fiber';
-import { useEffect, useRef } from 'react';
+import { MeshProps, useFrame, useThree } from '@react-three/fiber';
+import { FC, ReactElement, useEffect, useRef } from 'react';
 import { Vector3 } from 'three';
+import * as I from './Player.interface';
 
-const Player = () => {
+const Player: FC<I.Props> = ({}): ReactElement<MeshProps> => {
   const [ref, api] = useSphere(() => ({
     mass: 1,
     position: [0, 1, 0],
