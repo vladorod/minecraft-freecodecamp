@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31d07ed9-cdab-4173-8fba-74d44543f2df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Player/Player.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useKeyboard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TUTORIAL.md" beforeDir="false" afterPath="$PROJECT_DIR$/TUTORIAL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Player/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player/Player.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665395747905</updated>
       <workItem from="1665395751228" duration="7502000" />
-      <workItem from="1665780173805" duration="5313000" />
+      <workItem from="1665780173805" duration="8874000" />
     </task>
     <servers />
   </component>

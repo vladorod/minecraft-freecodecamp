@@ -2,7 +2,8 @@
 - [X] Sky
 - [X] Textures and images
 - [X] Ground
-- [ ] Player/First person view
+- [X] Player 
+- [ ] First person view 
 - [ ] Cursor
 - [ ] Gravity
 - [ ] Movement
