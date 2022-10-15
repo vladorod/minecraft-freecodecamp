@@ -1,1 +1,4 @@
-export interface Props {}
+export interface Props {
+  disabled?: boolean;
+  spawn: [number, number, number];
+}

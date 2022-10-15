@@ -1,18 +1,20 @@
 import { Triplet, useSphere } from '@react-three/cannon';
 import { MeshProps, useFrame, useThree } from '@react-three/fiber';
 import { FC, ReactElement, useEffect, useRef } from 'react';
-import { Vector3 } from 'three';
+import { NearestFilter, RepeatWrapping, Vector3 } from 'three';
 import * as I from './Player.interface';
 import { useKeyboard } from '../../hooks/useKeyboard';
+import { glassTexture } from '../../images/textures';
 
 const JUMP_FORCE = 6;
 const SPEED = 3;
 
-const Player: FC<I.Props> = ({}): ReactElement<MeshProps> => {
+const Player: FC<I.Props> = ({ disabled, spawn }): ReactElement<MeshProps> => {
   const [ref, api] = useSphere(() => ({
     mass: 1,
-    position: [0, 1, 0],
+    position: spawn,
     type: 'Dynamic',
+    material: 'red',
   }));
 
   const { camera } = useThree();
@@ -43,17 +45,29 @@ const Player: FC<I.Props> = ({}): ReactElement<MeshProps> => {
 
     direction.subVectors(frontVector, sideVector).normalize().multiplyScalar(SPEED);
 
-    api.velocity.set(direction.x, vel.current[1], direction.z);
-
-    if (jump && Math.abs(vel.current[1]) < 0.05) {
-      api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
+    if (!disabled) {
+      api.velocity.set(direction.x, vel.current[1], direction.z);
+      if (jump && Math.abs(vel.current[1]) < 0.05) {
+        api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
+      }
     }
 
     camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]));
   });
 
-  useEffect(() => {}, []);
+  glassTexture.magFilter = NearestFilter;
+  glassTexture.wrapS = RepeatWrapping;
+  glassTexture.wrapT = RepeatWrapping;
 
-  return <mesh ref={ref}></mesh>;
+  glassTexture.repeat.set(10, 10);
+
+  return (
+    <>
+      <mesh ref={ref}>
+        <sphereBufferGeometry attach="geometry" />
+        <meshStandardMaterial attach="material" map={glassTexture} addEventListener={() => {}} />
+      </mesh>
+    </>
+  );
 };
 export default Player;

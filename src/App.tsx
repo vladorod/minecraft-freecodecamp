@@ -14,7 +14,8 @@ function App() {
         <ambientLight intensity={0.5} />
         <Physics>
           <Ground />
-          <Player />
+          <Player disabled spawn={[0, 1, -8]} />
+          <Player spawn={[0, 1, 0]} />
         </Physics>
       </Canvas>
     </>
